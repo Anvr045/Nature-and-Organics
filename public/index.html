@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nature and Organic</title>
     <link rel="stylesheet" href="index.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 </head>
 <body>
 
@@ -38,9 +39,9 @@
     <span class="cart__zero">0</span>
 </div>
 <button class="button__burger">
-    <a class="button__link" href="">
-        <img class="button__img" src="img/burger/menu.png" alt="">
-    </a>
+   
+ <img class="button__img" src="img/burger/menu.png" alt="">
+
 </button>
 </div>
 </div>
@@ -617,24 +618,101 @@
 </section>
 
 <section class="form">
-<div class="form__block">
+<div class="container">
+<div class="form__block" style="background: url(img/form/IMAGE.png) no-repeat;">
 <div class="form__inner__block">
 <h2 class="form__title">Subscribe our Newsletter</h2>
 <div class="form__block__link">
     <form action="/" method="post">
-        <label for="input">
-        <input id="input" type="email" name="email" placeholder="Enter your email address">
-        </label>
+       <input class="input" type="email" name="email" placeholder="Enter your email address">
     </form>
     <a class="form__link" href="">Subscribe</a>
 </div>
 
 </div>
 </div>
+</div>
 </section>
 
+<footer class="footer">
+<div class="footer__block">
+<div class="footer__contact__block">
+<div class="footer__contact">
+    <h5 class="footer__contact__title">Contact Us</h5>
+    <div class="footer__contact__address">Email</div>
+    <a class="footer__link" href="mailto:needhelp@organick.com">needhelp@organick.com</a>
+</div>
+<div class="footer__social">
+    <div class="footer__contact__address">Phone</div>
+    <a class="footer__link" href="tel:123 (1254) 1452">123 (1254) 1452</a>
+</div>
+<div class="footer__pages">
+    <div class="footer__contact__address">Address</div>
+    <a class="footer__link" href="">88 Road, Brooklyn Street, USA</a>
+</div>
+</div>
+<div class="border"></div>
+
+<div class="footer__logo">
+<div class="footer__inner__logo">
+<img class="footer__inner__logo__img" src="img/footer/footer__logo.png" alt="">
+</div>
+
+<p class="footer__text">We are a popular and farming company aspiring to be a leader in the Organic food industry.</p>
+<ul class="footer__social__icon">
+    <li class="footer__social__item">
+        <img class="footer__social__img" src="img/footer/social1.png" alt="">
+    </li>
+    <li class="footer__social__item">
+        <img class="footer__social__img" src="img/footer/social2.png" alt="">
+    </li>
+    <li class="footer__social__item">
+        <img class="footer__social__img" src="img/footer/social3.png" alt="">
+    </li>
+    <li class="footer__social__item">
+        <img class="footer__social__img" src="img/footer/social4.png" alt="">
+    </li>
+</ul>
+</div>
+
+<div class="border"></div>
+
+<div class="footer__pages">
+    <h2 class="footer__pages__title">Utility Pages</h2>
+<ul class="footer__pages__ul">
+    <li class="footer__pages__list">Style Guide</li>
+    <li class="footer__pages__list">Protected</li>
+    <li class="footer__pages__list">Page Not Found</li>
+    <li class="footer__pages__list">Changelog</li>
+    <li class="footer__pages__list">Licenses</li>
+</ul>
 
 
+
+</div>
+
+
+</div>
+
+
+</footer>
+
+    <div class="footer__down__link"><a class="footer__down__linked" href="">Copyright © Organick | Designed by VictorFlow - Powered by Webflow</a></div>
     
+
+
+    <script>
+        $(document).ready(function(){
+
+
+
+
+ $('.button__burger').click(function(){
+$('.header__block__link').slideToggle();
+ });
+
+});
+
+    </script>
 </body>
 </html>
